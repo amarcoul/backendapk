@@ -44,9 +44,13 @@ INSTALLED_APPS = [
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
+
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  
 ]
+
+STATIC_ROOT=BASE_DIR/'staticfiles'
+
 AUTH_USER_MODEL = 'blog_api.User'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
